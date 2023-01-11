@@ -6,7 +6,7 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 
 app = Dash(__name__)
-
+server = app.server
 app.head = [html.Link(rel='stylesheet', href='style.css')]
 
 dfAtt = pd.read_parquet("ENEM_2017_2021.parquet")
